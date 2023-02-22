@@ -1,0 +1,17 @@
+linters:
+  disable:
+    - deadcode
+    - unused
+    - ineffassign
+    - varcheck
+    - gosimple
+    - errcheck
+    - govet
+    - staticcheck
+    - structcheck
+issues:
+  exclude-rules:
+    - path: \.go
+      linters:
+        - errcheck
+      text:  .Write` is not checked
